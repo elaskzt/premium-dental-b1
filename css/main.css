@@ -138,6 +138,23 @@ HEADER
 	color: #3bb7eb;
 }
 
+@media (max-width: 768px) {
+	.logo {
+		margin-top: 0;
+	}
+
+	.header-tel {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 992px) {
+	.descript {
+		margin-top: 15px;
+	}
+}
+
 
 
 /********************
@@ -168,12 +185,12 @@ SECTION-1
 
 .sec-1-header {
 	position: absolute;
-	top: 52px;
+	top: 55px;
 	right: 0;
 	left: 0;
 	font-family: 'bebas_neuebold';
 	font-size: 28px;
-	line-height: 1;
+	line-height: .9;
 	color: #24333e;
 }
 
@@ -183,6 +200,8 @@ SECTION-1
 
 .sec-1-pattern-top {
 	margin-top: 45px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .sec-1-cta-left {
@@ -194,9 +213,13 @@ SECTION-1
 	position: relative;
 }
 
-.sec-1-cta-left span{
+.sec-1-cta-left span {
+	color: #71b6e9;
 	font-family: 'bebas_neuebold';
-	color: #3bb7eb;
+}
+
+.sec-1-line {
+	margin-bottom: 17px;
 }
 
 .sec-1-cta-left:after {
@@ -211,10 +234,6 @@ SECTION-1
 	content: '';
 }
 
-.sec-1-line {
-	margin-bottom: 17px;
-}
-
 .sec-1-txt-bot {
 	font-family: 'bebas_neuebook';
 	font-size: 29px;
@@ -223,12 +242,13 @@ SECTION-1
 }
 
 .sec-1-txt-bot span:first-child {
-	color: #71b6e9;
 	font-size: 44px;
+	color: #71b6e9;
 }
 
-.sec-1-txt-bot span:last-child {
+.sec-1-txt-bot span:last-of-type {
 	font-size: 44px;
+	color: #2d3640;
 }
 
 .sec-1-form {
@@ -265,7 +285,8 @@ SECTION-1
 	margin-top: 11px;
 	margin-right: auto;
 	margin-left: auto;
-	width: 281px;
+	max-width: 281px;
+	width: 100%;
 }
 
 .sec-1-form .icon {
@@ -312,7 +333,8 @@ SECTION-1
 
 .sec-1-form-btn {
 	position: relative;
-	width: 280px;
+	max-width: 280px;
+	width: 100%;
 	height: 82px;
 	font-family: 'bebas_neuebook';
 	font-size: 35px;
@@ -353,6 +375,7 @@ SECTION-1
 }
 
 @media (max-width: 768px) {
+
 	.sec-1-left-wraper {
 		margin-right: auto;
 		margin-bottom: 25px;
@@ -363,10 +386,39 @@ SECTION-1
 		margin-right: auto;
 		margin-left: auto;
 		max-width: 301px;
+		margin-top: 25px;
+		border: 1px solid;
+		width: auto;
+		margin-bottom: 25px;
 	}
+
+	.sec-1-header {
+		font-size: 26px;
+		top: 58px;
+	}
+
+	.sec-1-form-header,
+	.button-wraper {
+		max-width: 301px;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.sec-1-form .form-group {
+		max-width: 260px;
+	}
+
+	.sec-1-form-btn {
+		font-size: 32px;
+	}
+
 }
 
-
+@media (max-width: 992px) {
+	.sec-1-form {
+		margin-top: 45px;
+	}
+}
 
 /********************
 DURASIN
@@ -469,6 +521,7 @@ DURASIN
 }
 
 
+
 /********************
 SECTION-2
 ********************/
@@ -496,15 +549,14 @@ SECTION-2
 
 .sec-2-subheader {
 	font-family: 'bebas_neuebook';
-	font-size: 39px;
+	font-size: 38px;
 	line-height: 1.2;
 	color: #24333e;
-	margin-bottom: 19px;
 }
 
 .sec-2-subheader span:first-child {
 	font-family: 'bebas_neuebold';
-	color: #d4edff;
+	color: #fff;
 }
 
 .sec-2-subheader span:nth-child(2) {
@@ -557,13 +609,31 @@ SECTION-2
 	color: #ef422d;
 }
 
+@media (max-width: 768px) {
+	.sec-2-img {
+		position: relative;
+		top: 0;
+		border-radius: 50%;
+		margin-top: 15px;
+		box-shadow: 0 0 10px red;
+	}
+
+	.sec-2-img.custom {
+		box-shadow: 0 0 10px green;
+	}
+
+	.sec-2-we-use {
+		padding-top: 15px;
+		padding-bottom: 25px;
+	}
+
+}
+
 
 
 /********************
 SECTION-3
 ********************/
-
-
 
 .sec-3-header {
 	margin-top: 52px;
@@ -632,6 +702,65 @@ SECTION-3
 .sec-3-bot span:last-child {
 	color: #ef422d;
 }
+
+@media (max-width: 992px) {
+
+	.sec-3-img {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+
+	.sec-3-txt-top,
+	.sec-3-mid,
+	.sec-3-header-bot,
+	.sec-3-bot {
+		margin-top: 15px;
+		max-width: 55%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.sec-3-header {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	.sec-3-img {
+		margin-top: 10px;
+		margin-right: auto;
+		margin-bottom: 15px;
+		float: none;
+	}
+
+	.sec-3-txt-top {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.sec-3-bot {
+		margin-bottom: 15px;
+	}
+
+	.sec-3-txt-top,
+	.sec-3-mid,
+	.sec-3-header-bot,
+	.sec-3-bot {
+		margin-top: 15px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+	}
+}
+
+
 
 
 
@@ -791,7 +920,6 @@ SECTION-5
 }
 
 
-
 /********************
 SECTION-6
 ********************/
@@ -804,12 +932,17 @@ SECTION-6
 	margin-top: 71px;
 	margin-bottom: 36px;
 	font-family: 'bebas_neuebook';
-	font-size: 59px;
+	font-size: 66px;
 	color: #24333e;
 }
 
-.sec-6-header span {
+.sec-6-header span:first-child {
 	font-family: 'bebas_neuebold';
+}
+
+.sec-6-header span:last-child {
+	font-family: 'bebas_neuebold';
+	color: #ef422d;
 }
 
 .sec-6-form {
@@ -889,6 +1022,18 @@ SECTION-6
 	height: 27px;
 }
 
+@media (max-width: 768px) {
+	.sec-6-header {
+		margin-top: 15px;
+		font-size: 44px;
+	}
+
+	.sec-6-form-btn:after {
+		border-right: none;
+		height: 0;
+	}
+}
+
 
 
 /********************
@@ -923,6 +1068,23 @@ SECTION-7
 
 .fancybox-button:hover {
 	cursor: zoom-in;
+}
+
+@media (max-width: 768px) {
+	.sec-7-header {
+		font-size: 56px;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.sec-7-photo {
+		max-width: 50%;
+	}
+
+	.sec-7-header {
+		font-size: 90px;
+	}
 }
 
 
@@ -964,6 +1126,8 @@ SECTION-8
 .map {
 	width: 100%;
 	max-width: 621px;
+	margin-left: auto;
+	margin-right: auto;
 	height: 247px;
 	border: 4px solid #24323e;
 }
@@ -1036,6 +1200,13 @@ textarea.form-control {
 	border: none;
 	border-bottom: 3px solid #a52e29;
 	border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+	.contacts-list {
+		margin-top: 15px;
+		text-align: center;
+	}
 }
 
 
