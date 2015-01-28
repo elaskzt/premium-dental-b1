@@ -1,3 +1,8 @@
+
+$(window).load(function() {
+  $("#container1").twentytwenty();
+});
+
 $(document).ready(function() {
 
 	var wow = new WOW({	mobile: false	});
@@ -35,5 +40,5 @@ $(document).ready(function() {
 		});
 	});
 
- });
+});
 

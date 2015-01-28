@@ -437,6 +437,55 @@ DURASIN
 	margin-right: auto;
 	margin-bottom: 52px;
 	display: block;
+	position: relative;
+}
+
+.durasin-header-wraper:before {
+	content: '';
+	position: absolute;
+	left: -21px;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 21px 45px 0;
+	border-color: transparent #cf4532 transparent transparent;
+}
+
+.durasin-header:before {
+	content: '';
+	position: absolute;
+	left: -21px;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 45px 21px;
+	border-color: transparent transparent #cf4532 transparent;
+}
+
+.durasin-header-wraper:after {
+	content: '';
+	position: absolute;
+	right: -21px;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 45px 21px 0 0;
+	border-color: #cf4532 transparent transparent transparent;
+}
+
+.durasin-header:after {
+	content: '';
+	position: absolute;
+	right: -21px;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 45px 0 0 21px;
+	border-color: transparent transparent transparent #cf4532;
 }
 
 .durasin-header {
@@ -460,13 +509,34 @@ DURASIN
 	font-family: 'bebas_neuebold';
 }
 
+#container1,
 .mouth {
-	background: url(../img/sec-2-mouth.png) center no-repeat;
 	height: 396px;
 	width: 396px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	border-radius: 50%;
+}
+
+.twentytwenty-overlay:hover {
+	background-color: transparent;
+}
+
+.twentytwenty-before-label:before {
+	content: 'До';
+}
+
+.twentytwenty-after-label:before {
+	content: 'После';
+}
+
+.twentytwenty-before-label:before,
+.twentytwenty-after-label:before {
+	background: rgba(255, 255, 255, 0.8);
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .mouth-txt {
@@ -475,6 +545,7 @@ DURASIN
 	color: #2d3640;
 	border-bottom: 3px solid #71b6e9;
 	position: absolute;
+	z-index: 9999;
 }
 
 .left {
