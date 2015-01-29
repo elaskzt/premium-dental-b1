@@ -519,6 +519,11 @@ DURASIN
 	border-radius: 50%;
 }
 
+#container1 img {
+	max-width: 396px;
+	height: auto;
+}
+
 .twentytwenty-overlay:hover {
 	background-color: transparent;
 }
